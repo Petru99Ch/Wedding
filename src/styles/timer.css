@@ -1,0 +1,46 @@
+.timer p {
+  font-size: 2em;
+}
+
+
+.timer__items {
+    display: flex;
+    font-size: 48px;
+    color: #fff;
+    font-family: 'Pacifico', cursive;
+  }
+  .timer__item {
+    position: relative;
+    min-width: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+    text-align: center;
+  }
+  .timer__item::before {
+    content: attr(data-title);
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    font-size: 14px;
+  }
+  .timer__item:not(:last-child)::after {
+    content: ':';
+    position: absolute;
+    right: -15px;
+  }
+
+
+
+  .cand-custom{
+    background-image: url(../images/bg-7.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+  }
+
+  
