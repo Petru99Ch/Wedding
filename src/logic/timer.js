@@ -1,16 +1,14 @@
-// конечная дата
-
 
 document.addEventListener('DOMContentLoaded', function() {
-    // конечная дата
+  
     const deadline = new Date(2024, 7, 9);
-    // id таймера
+   
     let timerId = null;
-    // склонение числительных
+    
     function declensionNum(num, words) {
       return words[(num % 100 > 4 && num % 100 < 20) ? 2 : [2, 0, 1, 1, 1, 2][(num % 10 < 5) ? num % 10 : 5]];
     }
-    // вычисляем разницу дат и устанавливаем оставшееся времени в качестве содержимого элементов
+
     function countdownTimer() {
       const diff = deadline - new Date();
       if (diff <= 0) {
@@ -29,13 +27,13 @@ document.addEventListener('DOMContentLoaded', function() {
       $minutes.dataset.title = declensionNum(minutes, ['minută', 'minute', 'minute']);
       $seconds.dataset.title = declensionNum(seconds, ['secundă', 'secunde', 'secunde']);
     }
-    // получаем элементы, содержащие компоненты даты
+    
     const $days = document.querySelector('.timer__days');
     const $hours = document.querySelector('.timer__hours');
     const $minutes = document.querySelector('.timer__minutes');
     const $seconds = document.querySelector('.timer__seconds');
-    // вызываем функцию countdownTimer
+   
     countdownTimer();
-    // вызываем функцию countdownTimer каждую секунду
+  
     timerId = setInterval(countdownTimer, 1000);
   });
