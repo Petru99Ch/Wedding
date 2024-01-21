@@ -1,5 +1,4 @@
-
-
+@import url(media.css);
 
 .nav-custom{
     /* line-height: 1em; */
@@ -24,6 +23,10 @@
     background-color: #6e8e4a;;
     color: #fff;
     transition: .5s;
+}
+
+.nav-custom {
+    padding: 1.5em;
 }
 
 .bars-custom{
@@ -190,6 +193,8 @@
     bottom: 0;
     z-index: -2;
     height: 55vh;
+    
+
     width: 100%; 
 
     
@@ -206,41 +211,42 @@
     font-size: 2em;
 }
 
-.mireasa, .mire {
+.ce-animation{
+    margin: 2em auto;
+    
+}
+
+.mireasa , .mire  {
     
     height: 200px;
     
 }
 
 .mire{
-    transform: translateX(200px);
+    transform: translateX(80px);
     opacity: 0;
     transition: 2s;
 }
 
 .mireasa{
-    transform: translateX(-100px);
+    transform: translateX(-150px);
     opacity: 0;
     transition: 2s;
 }
 
 .mire-after{
-    transform: translateX(50px);
+    transform: translateX(-69px);
     opacity: 1;
 }
 
 .mireasa-after{
-    transform: translateX(70px);
+    transform: translateX(-50px);
     opacity: 1;
     position: relative;
     z-index: 2;
     
 }
-.ce-animation-2{
-    width: 50vw;
-    margin: 0 auto;
 
-}
 
 .flower{
     display: block;
@@ -291,7 +297,8 @@
 }
 
 .img-bg{   
-  width: 100%;  
+  width: 390px; 
+  margin: 0 auto; 
   
 }
 

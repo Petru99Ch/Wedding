@@ -1,0 +1,72 @@
+@media (min-width: 650px) {
+    #bars { 
+        display: none;
+    }
+
+    #navS{
+        padding: 0 1em;
+    }
+
+    #list {
+        position: relative;
+        display: flex;
+        width: 50vw;
+        padding: 0;
+        justify-content: space-between;
+        backdrop-filter: blur(0);
+        margin: 0;
+    }
+
+    #list li {
+        border-bottom: none;
+        
+    }
+
+    #list li a { 
+        color: #fff;
+    }
+
+    .ce-animation {
+        height: 300px;
+        margin-bottom: 1em;
+        display: block;
+    }
+
+
+   #left,  #right {
+       height: 250px;
+    }
+
+    #left .mireasa-after{
+        transform: translateX(-40px);
+        opacity: 1;
+        position: relative;
+        z-index: 2;
+        
+    }
+
+    #invit, #invitS  {
+        width: 200px;
+    }
+
+    #bg-invit {
+        width: 60%;
+        left: 50%;
+        height: 50%;
+        margin-left: -30%;
+        
+    }
+    #unde{
+        padding-top: 2em;
+    }
+
+    .where-card .img-bg{
+        width: 490px;
+    }
+}
+
+@media (min-width: 1024px) {
+    #navS {
+        font-size: 1.1em;
+    }
+}
