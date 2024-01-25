@@ -73,16 +73,12 @@
 
 
 .home-custom {
-    
-    
     width: 100%;
     height: 100vh;
 
     font-family: 'Pacifico', cursive;
     color: #ffffff;
-
     position: relative;
-    
     
 }
 
@@ -94,10 +90,10 @@
     width: 100%;
     height: 100%;
     filter: brightness(50%);
-    background-image: url(../images/home.avif);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed; 
+    background-image: url(../images/home.png);
+background-size: cover;
+  background-attachment: scroll; 
+   
 
 }
 .main-ins{
@@ -280,9 +276,9 @@
 
 #cand {
     height: 100vh;
-    font-family: 'Pacifico', cursive;
+    font-family: 'Pacifico',   cursive;
     color: #fff;
-    
+   
 }
 
 
@@ -294,6 +290,7 @@
 #unde{
     height: 80vh;
     font-family: "Signika", sans-serif;
+    padding-top: 1em;
 }
 
 .img-bg{   
